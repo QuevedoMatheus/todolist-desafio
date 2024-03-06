@@ -1,4 +1,2 @@
-CREATE TABLE IF NOT EXISTS USERS (
-    username VARCHAR(250) NOT NULL primary key,
-    password VARCHAR(250) NOT NULL
-);
+INSERT INTO USERS (username, password)
+VALUES ('username', '$2a$10$GiseHkdvwOFr7A9KRWbeiOmg/PYPhWVjdm42puLfOzR/gIAQrsAGy');

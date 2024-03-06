@@ -1,12 +1,16 @@
 package com.desafio.todolist.entity;
 
 
+
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
+
+
 
 @Entity
 @Table(name = "tb_todos")
@@ -23,6 +27,10 @@ public class Todo {
     private int prioridade;
 
      
+    
+    public Todo() {
+    }
+
     public Todo(Long id, @NotBlank String nome,@NotBlank String descricao, boolean realizado, int prioridade) {
         this.id = id;
         this.nome = nome;
